@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Black Walf</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جدول طلاب تعليم القرآن</title>
+    <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+    <h1>جدول طلاب تعليم القرآن</h1>
+    <button id="add-student-btn">إضافة طالب جديد</button>
+    <input type="text" id="search-input" placeholder="ابحث عن الطالب...">
+    <table id="students-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>الاسم الثلاثي</th>
+                <th>العمر</th>
+                <th>عدد الأجزاء المحفوظة</th>
+                <th>الجزء المختبر</th>
+                <th>تاريخ الانتساب</th>
+                <th>الإجراءات</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- الصفوف ستتم إضافتها بشكل ديناميكي باستخدام JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- نافذة منبثقة لتسجيل وتعديل الطلاب -->
+    <div id="student-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">إضافة طالب جديد</h2>
+            <form id="student-form">
+                <label for="fullName">الاسم الثلاثي:</label>
+                <input type="text" id="fullName" name="fullName" required>
+                
+                <label for="age">العمر:</label>
+                <select id="age" name="age" required>
+                    <!-- سيتم إضافة الخيارات عبر JavaScript -->
+                </select>
+                
+                <label for="partsMemorized">عدد الأجزاء المحفوظة:</label>
+                <input type="number" id="partsMemorized" name="partsMemorized" min="1" max="30" required>
+                
+                <label for="partBeingTested">الجزء المختبر:</label>
+                <select id="partBeingTested" name="partBeingTested" required>
+                    <!-- سيتم إضافة الخيارات عبر JavaScript -->
+                </select>
+                
+                <label for="enrollmentDate">تاريخ الانتساب:</label>
+                <input type="date" id="enrollmentDate" name="enrollmentDate" required>
+                
+                <button type="submit" id="save-btn">حفظ</button>
+                <button type="button" id="cancel-btn">إلغاء</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
